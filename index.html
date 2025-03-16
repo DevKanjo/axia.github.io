@@ -42,14 +42,42 @@
     <link href="assets/css/main.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/typed.css">
 <style>
+ 
   @media screen and (max-width: 768px) {
+  .heropa {
+        padding-top: 70px;
+        text-align: center;
+
+    }
+
+    .hero-logo {
+        width: 120px; /* Adjust logo size for mobile */
+        margin-bottom: 10px;
+    }
+
+    .hero-content {
+        text-align: center;
+        align-items: center;
+      
+    }
+
+    .hero-image-container {
+        order: 2; /* Moves image below text */
+        margin-top: 20px;
+    }
+
+    .hero-image {
+        max-width: 90%;
+        height: auto;
+    }
+
     .fbutton {
-          position: fixed;
-        bottom: 15px; /* Keeps a little space from the bottom */
+        position: fixed;
+        bottom: 15px;
         left: 50%;
-        transform: translateX(-50%); /* Centers the button */
-        width: 80%; /* Adjust width as needed */
-        max-width: 300px; /* Ensures it's not too wide */
+        transform: translateX(-50%);
+        width: 80%;
+        max-width: 300px;
         padding: 15px;
         background-color: #FF9900;
         color: white;
@@ -73,12 +101,12 @@
 
   <body class="index-page" style="overflow-x: hidden; margin: 0; padding: 0;">
      <!-- Pricing Section -->
-      <div style="background-image: url(./assets/img/hero-bg_desktop.png); background-size: cover; background-repeat: no-repeat; padding-top: 20px; padding-right: 20px; padding-bottom: 30px;">
-        <img src="./assets/img/Logo.png" alt="" style="float: right;"> <br>
+      <div class="heropa" style="background-image: url(./assets/img/hero-bg_desktop.png); background-size: cover; background-repeat: no-repeat; padding-top: 20px; padding-right: 20px; padding-bottom: 30px;">
+        <img class="hero-logo" src="./assets/img/Logo.png" alt="" style="float: right;"> <br>
         <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center; width: 100%">
-        <img src="./assets/img/desk_AR_kuwait.png" alt="" style="max-width: 100%; height: auto;">
+        <img class="hero-image-container" src="./assets/img/desk_AR_kuwait.png" alt="" style="max-width: 100%; height: auto;">
 
-        <div style="align-items: flex-end; text-align: right; flex: 1; flex-direction: column; display: flex; justify-content: space-evenly;" >
+        <div class="hero-content" style="align-items: flex-end; text-align: right; flex: 1; flex-direction: column; display: flex; justify-content: space-evenly;" >
           <p style="font-weight: bolder; font-size: xx-large;">تداول سهم  <span class="typed" style="color: #FF9900;">أدنوك</span>
             <br>
         بأمان مع أكسيا!>بنك الكويــــت الوطني </p> <br>
@@ -289,7 +317,7 @@
           <div class="col-lg-5" id="form">
             <form action="forms/contact.php" method="post" class="php-email-form" >
               <div class="row gy-4">
-                <h4 style="font-family: monospace; font-weight: bold;">!Trade Arab Stocks with Axia</h4>
+                <p style="font-family: monospace; font-weight: 1000; font-size: 20px; text-align: center;">تداول الأسهم العربية مع أكسيا!</p>
                 <div class="col-md-12">
                   <input type="text" name="name" id="name-field" class="form-control" required="" placeholder="الاسم الكامل" style="border: 0; border-bottom: 1px solid #D3D3D3;">
                 </div>
@@ -311,8 +339,8 @@
                   <input type="number" class="form-control" name="subject" id="subject-field" required="" placeholder="رقم التليفون" style="border: 0; border-bottom: 1px solid #D3D3D3;">
                 </div>
                 <div class="col-md-12 text-center">
-                    <p style="font-size: small;">By creating an account, you agree to our <a href="#" style="text-decoration: underline; color: black;">Terms and Conditions </a>,
-                     <a href="#" style="text-decoration: underline; color: black;">Privacy Policy</a> and to receive email marketing materials – you can unsubscribe at any time.</p>
+                    <p style="font-size: small;">من خلال إنشاء حساب، فإنك توافق على <a href="#" style="text-decoration: underline; color: black;"> الشروط والأحكام</a>,
+                     <a href="#" style="text-decoration: underline; color: black;"> الخصوصيةوسياسة</a>الخاصة بنا وعلى تلقي مواد التسويق عبر البريد الإلكتروني – يمكنك إلغاء الاشتراك في أي وقت.</p>
                 </div>
 
                 <div class="col-md-12 text-center">
