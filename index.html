@@ -43,7 +43,7 @@
 
   <body class="index-page" style="overflow-x: hidden; margin: 0; padding: 0;">
      <!-- Pricing Section -->
-      <div style="background-image: url(./assets/img/hero-bg_desktop.png); background-size: cover; background-repeat: no-repeat; padding-top: 20px; padding-right: 20px;">
+      <div style="background-image: url(./assets/img/hero-bg_desktop.png); background-size: cover; background-repeat: no-repeat; padding-top: 20px; padding-right: 20px; padding-bottom: 30px;">
         <img src="./assets/img/Logo.png" alt="" style="float: right;"> <br>
         <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center; width: 100%">
         <img src="./assets/img/desk_AR_kuwait.png" alt="" style="max-width: 100%; height: auto;">
@@ -54,7 +54,8 @@
         بأمان مع أكسيا!>بنك الكويــــت الوطني </p> <br>
             
           <p style="width: 60%; font-weight: 400; font-size: x-large; text-align: right;">التداول في الأسواق المحليّة أصبح أسهل مع أكسيا! استثمر في أسهمك العربية المفضلة على المنصة الرائدة والحائزة على جوائز دون عمولة على فتح واغلاق الصفقات!</p>
-        <button style="width: 200px; background-color: #FF9900; padding-inline: 55px; padding-block: 8px; border: 0; font-weight: bolder; font-size: 20px; border-radius: 5px; color: white;">
+        <button style="width: 200px; background-color: #FF9900; padding-inline: 55px; padding-block: 8px; border: 0; font-weight: bolder; font-size: 20px; border-radius: 5px; color: white;"
+        onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' });">
           تداول الآن
         </button>
 </div>
@@ -175,7 +176,7 @@
               <img src="assets/img/5_img_Kuwait.webp" width="90%"/>
           </div>
 
-          <div class="col-lg-5">
+          <div class="col-lg-5" id="form">
             <form action="forms/contact.php" method="post" class="php-email-form" >
               <div class="row gy-4">
                 <h4 style="font-family: monospace; font-weight: bold;">!Trade Arab Stocks with Axia</h4>
