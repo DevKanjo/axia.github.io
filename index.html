@@ -38,6 +38,33 @@
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/typed.css">
+<style>
+  @media screen and (max-width: 768px) {
+    .fbutton {
+          position: fixed;
+        bottom: 15px; /* Keeps a little space from the bottom */
+        left: 50%;
+        transform: translateX(-50%); /* Centers the button */
+        width: 80%; /* Adjust width as needed */
+        max-width: 300px; /* Ensures it's not too wide */
+        padding: 15px;
+        background-color: #FF9900;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        text-align: center;
+        border-radius: 8px;
+        z-index: 1000;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        padding-bottom: 60px; /* Adjust this if needed */
+    }
+}
+
+</style>
 
   </head>
 
@@ -55,7 +82,8 @@
             
           <p style="width: 60%; font-weight: 400; font-size: x-large; text-align: right;">التداول في الأسواق المحليّة أصبح أسهل مع أكسيا! استثمر في أسهمك العربية المفضلة على المنصة الرائدة والحائزة على جوائز دون عمولة على فتح واغلاق الصفقات!</p>
         <button style="width: 200px; background-color: #FF9900; padding-inline: 55px; padding-block: 8px; border: 0; font-weight: bolder; font-size: 20px; border-radius: 5px; color: white;"
-        onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' });">
+        onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' });"
+        class="fbutton">
           تداول الآن
         </button>
 </div>
